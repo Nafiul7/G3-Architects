@@ -1,0 +1,190 @@
+.work-sans-font {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* navbar */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+nav h3 {
+    font-size: 2.5rem;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #424242;
+    font-weight: 500;
+}
+
+header {
+    background-color: #ff8f0e17;
+
+}
+
+/* banner styles */
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1140px;
+    margin: 0 auto;
+    margin-top: 102px;
+}
+
+.banner-container {
+    width: 862px;
+    text-align: center;
+}
+
+.banner .banner-title {
+    text-align: center;
+    font-size: 4rem;
+
+}
+
+.banner-description {
+    color: #727272;
+    margin-top: 20px;
+}
+
+.banner .btn,
+.features .btn {
+    background-color: #FF900E;
+    color: #ffff;
+    border: none;
+    padding: 20px 25px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 32px 0 50px 0;
+}
+
+.banner img {
+    width: 100%;
+    margin-bottom: 45px;
+}
+
+.first-section {
+    margin-top: 85px;
+    display: flex;
+    align-items: center;
+}
+
+.img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.features {
+    margin-left: 73px;
+}
+
+
+.features .features-title {
+    font-size: 2.5rem;
+}
+
+
+.features .features-title .first-text {
+    color: #727272;
+    font-weight: 500;
+}
+
+.features .features-title .second-text {
+    color: #000;
+    font-weight: 700;
+}
+
+.features .features-title .third-text {
+    color: #FF900E;
+    font-weight: 700;
+}
+
+.features .features-description {
+    color: #727272;
+    margin-top: 24px;
+}
+
+/* responsive design */
+
+@media screen and (max-width:576px) {
+    nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav h3 {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .banner-container {
+        width: 100%;
+    }
+
+    .banner .banner-title {
+        font-size: 2.2rem;
+    }
+
+    .banner .banner-img {
+        margin: 0 20px;
+    }
+
+    /* maine section */
+
+    .first-section {
+        flex-direction: column;
+    }
+
+    .img-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .features {
+        margin: 20px 20px;
+        text-align: center;
+    }
+
+    .features .features-title {
+        font-size: 2rem;
+    }
+}
