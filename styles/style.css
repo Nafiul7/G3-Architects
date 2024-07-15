@@ -138,6 +138,192 @@ header {
     margin-top: 24px;
 }
 
+/* second-section */
+
+.second-section {
+    display: flex;
+    margin-top: 130px;
+}
+
+.box-container h4 {
+    color: rgb(19, 19, 19);
+    font-family: Work Sans;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: left;
+    border-left: 5px solid rgb(255, 144, 14);
+    padding-left: 21px;
+}
+
+.box-container {
+    width: 750px;
+    /* height: 982px; */
+}
+
+.box-container .box-container-description {
+    color: rgb(114, 114, 114);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    margin-top: 24px;
+}
+
+.box-container .box {
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    background: rgb(255, 255, 255);
+    margin-top: 20px;
+}
+
+.box h5 {
+    color: rgb(19, 19, 19);
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.box .box-description {
+    color: rgb(114, 114, 114);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.image img {
+    width: 100%;
+}
+
+.image {
+    margin-left: 146px;
+}
+
+.image .badge {
+    border-radius: 8px;
+    background: rgb(255, 144, 14);
+    padding: 45px 42px;
+    color: #ffff;
+    border: none;
+    margin-top: -92px;
+    margin-left: -77px;
+}
+
+.image .badge .year {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.image .badge .experience {
+    font-size: 25px;
+}
+
+
+/* third section */
+
+.third-section {
+    margin-top: 130px;
+}
+
+.third-section-title {
+    color: rgb(19, 19, 19);
+    font-size: 45px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.third-section-description {
+    color: rgb(114, 114, 114);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    margin-top: 24px;
+}
+
+.card-container {
+    display: flex;
+    /* gap: 124px; */
+    justify-content: space-between;
+    margin-top: 100px;
+
+}
+
+.card {
+    border: 1px solid rgb(255, 144, 14);
+    border-radius: 8px;
+    height: 240px;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.card .card-title {
+    color: rgb(66, 66, 66);
+    font-size: 45px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.card .card-description {
+    color: rgb(114, 114, 114);
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+/* /* sponsors-styles  */
+
+.fourth-section {
+    margin-top: 180px;
+}
+
+.sponsor-title {
+    color: rgb(19, 19, 19);
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.sponsor-description {
+    color: rgb(114, 114, 114);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 24px;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.icon-container img {
+    width: 130px;
+}
+
+footer {
+    max-width: 1140px;
+    margin: 0 auto;
+    border-radius: 8px;
+    background: rgb(255, 244, 231);
+    padding: 34px 0px;
+    margin-top: 130px;
+    margin-bottom: 216px;
+}
+
+footer p {
+    color: rgb(66, 66, 66);
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
 /* responsive design */
 
 @media screen and (max-width:576px) {
@@ -158,11 +344,11 @@ header {
     }
 
     .banner-container {
-        width: 100%;
+        width: 90%;
     }
 
     .banner .banner-title {
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
 
     .banner .banner-img {
@@ -186,5 +372,46 @@ header {
 
     .features .features-title {
         font-size: 2rem;
+    }
+
+    .second-section {
+        flex-direction: column;
+    }
+
+    .box-container {
+        width: 90%;
+        margin: 0 20px;
+    }
+
+    .image {
+        margin: 30px 20px;
+    }
+
+    .image .badge {
+        margin: 0;
+
+    }
+
+    .box-container h4 {
+        font-size: 2.2rem;
+    }
+
+    .third-section{
+        margin: 0 20px;
+    }
+
+    .card-container{
+        flex-direction: column;
+        gap: 18px;
+        align-items: center;
+    }
+
+    .fourth-section{
+        margin: 60px 20px;
+    }
+
+    .icon-container{
+        flex-direction: column;
+        gap: 25px;
     }
 }
